@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5efe2">
+  <title>Equipo 7 de Naruto</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/eventos.js" defer></script>
+</head>
+<body>
+  <main class="contenedor">
+    <header class="encabezado">
+      <p class="etiqueta">Electiva I · Práctica de eventos</p>
+      <h1>Equipo 7</h1>
+      <p>Cinco ninjas, cinco formas de interactuar.</p>
+    </header>
+
+    <section class="equipo" aria-label="Tarjetas del Equipo 7 y sus aliados">
+      <article class="tarjeta naruto" id="tarjeta-naruto">
+        <img class="foto-naruto" id="foto-naruto" src="img/naruto%20normal.jpg" alt="Naruto Uzumaki, ninja de Konoha" width="500" height="180" loading="lazy">
+        <p class="rango">Ninja de Konoha</p>
+        <h2>Naruto Uzumaki</h2>
+        <p id="naruto-descripcion">Nunca se rinde y siempre protege a sus amigos.</p>
+        <p class="estado" id="naruto-estado" aria-live="polite">Estado: modo normal</p>
+        <button class="boton boton-naruto" id="btn-naruto" type="button">Activar Modo Sabio</button>
+      </article>
+
+      <article class="tarjeta sasuke" id="tarjeta-sasuke" tabindex="0">
+        <img class="foto-sasuke" id="foto-sasuke" src="img/sasuke%20sin%20chidori.jpg" alt="Sasuke Uchiha, ninja del clan Uchiha" width="500" height="180" loading="lazy">
+        <p class="rango">Ninja de Konoha</p>
+        <h2>Sasuke Uchiha</h2>
+        <p>Un ninja habilidoso que domina el estilo del rayo.</p>
+        <p class="estado" id="sasuke-estado" aria-live="polite">Pasa el cursor para activar el Chidori.</p>
+      </article>
+
+      <article class="tarjeta sakura" id="tarjeta-sakura">
+        <img class="foto-sakura" id="foto-sakura" src="img/sakura%20normal.jpg" alt="Sakura Haruno, ninja médico del Equipo 7" width="500" height="180" loading="lazy">
+        <p class="rango">Ninja médico</p>
+        <h2>Sakura Haruno</h2>
+        <p>Combina inteligencia, fuerza y un gran talento médico.</p>
+        <p class="fuerza" id="sakura-fuerza" hidden>Fuerza interior: su determinacion puede cambiar cualquier batalla.</p>
+        <button class="boton boton-sakura" id="btn-sakura" type="button">Revelar fuerza interior</button>
+      </article>
+
+      <article class="tarjeta kakashi" id="tarjeta-kakashi">
+        <img class="foto-kakashi" id="foto-kakashi" src="img/kakashi%20hatake%20sin%20el%20sharinggan.jpg" alt="Kakashi Hatake, líder del Equipo 7" width="500" height="180" loading="lazy">
+        <p class="rango">Jounin · Líder del equipo</p>
+        <h2>Kakashi Hatake</h2>
+        <p id="kakashi-descripcion">El ninja copia guia al Equipo 7 con calma y experiencia.</p>
+        <p class="estado" id="kakashi-estado" aria-live="polite">Su ojo izquierdo permanece cubierto.</p>
+        <button class="boton boton-kakashi" id="btn-kakashi" type="button">Revelar Sharingan</button>
+      </article>
+
+      <article class="tarjeta tarjeta-iruka" id="tarjeta-iruka" role="button" tabindex="0" aria-pressed="false" aria-label="Girar la tarjeta de Iruka Umino">
+        <div class="giro-contenido">
+          <div class="cara-frontal" id="cara-frontal-iruka">
+            <img class="foto-iruka" src="img/iruka.jpg" alt="Iruka Umino, instructor de la Academia Ninja" width="500" height="180" loading="lazy">
+            <p class="rango">Instructor de la Academia</p>
+            <h2>Iruka Umino</h2>
+            <p>El primer maestro que reconoció el esfuerzo de Naruto.</p>
+            <p class="ayuda-giro">Haz clic o presiona Enter para ver el reverso.</p>
+          </div>
+          <div class="cara-trasera" id="cara-trasera-iruka" aria-hidden="true">
+            <p class="rango">Reverso de la tarjeta</p>
+            <h2>Un maestro que inspira</h2>
+            <p>Iruka conoce la soledad de Naruto y decide apoyarlo como parte de su familia.</p>
+            <p class="frase-iruka">"El valor de alguien se demuestra al no abandonar a sus amigos."</p>
+            <p class="ayuda-giro">Haz clic para volver.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
